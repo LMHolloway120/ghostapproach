@@ -1,0 +1,21 @@
+import javax.swing.*;
+public class App {
+    public static void main(String[] args) throws Exception {
+       int boardWidth = 360;
+       int boardHeight = 640;
+       
+       JFrame frame = new JFrame("Ghost Approach");
+       //frame.setVisible(true);
+       frame.setSize(boardHeight, boardHeight);
+       frame.setLocationRelativeTo(null);
+       frame.setResizable(false);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        ghostApproach ghostApproach = new ghostApproach();
+        frame.add(ghostApproach);
+        frame.pack();
+        ghostApproach.requestFocus();
+        frame.setVisible(true);
+
+    }
+}
